@@ -1,6 +1,3 @@
-const express = require("express");
-const router = express.Router();
-
-router.get("/api", function(req, res){
-    res.send("..");
-})
+module.exports = app => {
+    app.get("/api", (req, res) => res.send('. ..'))
+}
